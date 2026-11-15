@@ -4,7 +4,7 @@ import { initMainChart } from './charts.js';
 import { createAppView } from './apps.js';
 import { sendNotificationMail } from './mails.js';
 
-if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
+if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
     document.getElementById('start-btn').addEventListener('click', () => {
         window.location = 'sim.html';
     });
