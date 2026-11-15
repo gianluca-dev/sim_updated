@@ -1,0 +1,59 @@
+{
+  "events": [
+    {
+      "id": 0,
+      "type": "economic",
+      "title": "Steuersenkung",
+      "description": "Die Mehrwertsteuer wird von 19% auf 7% gesenkt.",
+      "cost": 500000,
+      "happinessDelta": 0.15,
+      "shieldValue": 0
+    }
+  ],
+  "crises": [
+    {
+      "id": 0,
+      "type": 1,
+      "title": "Proteste",
+      "delta": -0.25,
+      "mail": {
+        "id": 0
+      }
+    },
+    {
+      "id": 1,
+      "type": 1,
+      "title": "Streiks",
+      "delta": -0.25,
+      "mail": {
+        "id": 1
+      }
+    }
+  ],
+  "mails": [
+    {
+      "id": 0,
+      "subject": "Proteste",
+      "content": "Es sind Proteste ausgebrochen!",
+      "sender": {
+        "username": "Innenminister",
+        "avatar": {
+          "src": "/src/assets/images/minister_avatar.avif",
+          "alt": "Avatar"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "subject": "Streiks",
+      "content": "Es sind Streiks ausgebrochen!",
+      "sender": {
+        "username": "Innenminister",
+        "avatar": {
+          "src": "/src/assets/images/minister_avatar.avif",
+          "alt": "Avatar"
+        }
+      }
+    }
+  ]
+}
