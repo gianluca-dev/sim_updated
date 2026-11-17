@@ -6,7 +6,7 @@ import { sendNotificationMail } from './mails.js';
 
 if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
     document.getElementById('start-btn').addEventListener('click', () => {
-        window.location = 'sim.html';
+        window.location = '/sim.html';
     });
 }
 
@@ -14,7 +14,7 @@ let simData;
 
 const loadData = async () => {
     try {
-        const response = await fetch('./sim.json');
+        const response = await fetch('/sim.json');
         return await response.json();
     } catch (error) {
         console.error(error);
@@ -58,7 +58,7 @@ const createSimView = () => {
             <!--Header-->
             <header class="sim-view-header">
                 <div class="logo-ctn">
-                    <img src="/src/assets/sim/logo.svg" loading="lazy" alt="logo">
+                    <img src="/sim_assets/sim/logo.svg" loading="lazy" alt="logo">
                 </div>
                 <div class="coin-display-ctn" id="coin-display-ctn">
                     <p class="coin-display-elm" id="coin-display-elm">...</p>
@@ -69,21 +69,21 @@ const createSimView = () => {
                 <aside class="sim-view-sidenav" id="sim-view-sidenav">
                     <!--Event-Ctn-->
                     <div class="event-ctn-wrapper" id="event-ctn-wrapper">
-                        <div class="event-ctn" id="event-economic"><img src="/src/assets/sim_icons/coins.svg" loading="eager" alt=""></div>
-                        <div class="event-ctn" id="event-political"><img src="/src/assets/sim_icons/landmark.svg" loading="eager" alt=""></div>
-                        <div class="event-ctn" id="event-social"><img src="/src/assets/sim_icons/user-round-group.svg" loading="eager" alt=""></div>
-                        <div class="event-ctn" id="event-health"><img src="/src/assets/sim_icons/heart-pulse.svg" loading="eager" alt=""></div>
+                        <div class="event-ctn" id="event-economic"><img src="/sim_assets/sim_icons/coins.svg" loading="eager" alt=""></div>
+                        <div class="event-ctn" id="event-political"><img src="/sim_assets/sim_icons/landmark.svg" loading="eager" alt=""></div>
+                        <div class="event-ctn" id="event-social"><img src="/sim_assets/sim_icons/user-round-group.svg" loading="eager" alt=""></div>
+                        <div class="event-ctn" id="event-health"><img src="/sim_assets/sim_icons/heart-pulse.svg" loading="eager" alt=""></div>
                     </div>
                     <!--Nav-Icons-->
-                    <div class="nav-icon"><img src="/src/assets/sim_icons/flask.svg" loading="eager" alt="flask-icon"></div>
-                    <div class="nav-icon settings"><img src="/src/assets/sim_icons/settings.svg" loading="eager" alt="settings-icon"></div>
+                    <div class="nav-icon"><img src="/sim_assets/sim_icons/flask.svg" loading="eager" alt="flask-icon"></div>
+                    <div class="nav-icon settings"><img src="/sim_assets/sim_icons/settings.svg" loading="eager" alt="settings-icon"></div>
                 </aside>
                 <main class="sim-view-main">
                     <section class="sim-view-map-section">
                         <div class="swap-map-btn-ctn">
-                            <button type="button" class="swap-map-btn" id="swap-map-btn"><img src="/src/assets/sim_icons/swap.svg" loading="eager" alt="swap-icon"></button>
+                            <button type="button" class="swap-map-btn" id="swap-map-btn"><img src="/sim_assets/sim_icons/swap.svg" loading="eager" alt="swap-icon"></button>
                         </div>
-                        <img src="/src/assets/images/map_europe.avif" loading="lazy" alt="map" class="map-img">
+                        <img src="/sim_assets/images/map_europe.avif" loading="lazy" alt="map" class="map-img">
                     </section>
                     <section class="sim-view-info-section">
                         <div class="main-chart-ctn">
@@ -97,8 +97,8 @@ const createSimView = () => {
             </section>
             <footer class="sim-view-footer">
                 <div class="app-ctn-wrapper" id="app-ctn-wrapper">
-                    <div class="app-icon" id="mail"><img src="/src/assets/sim_icons/mail.svg" loading="eager" alt="mail-icon"></div>
-                    <div class="app-icon" id="comp"><img src="/src/assets/sim_icons/earth.svg" loading="eager" alt="earth-icon"></div>
+                    <div class="app-icon" id="mail"><img src="/sim_assets/sim_icons/mail.svg" loading="eager" alt="mail-icon"></div>
+                    <div class="app-icon" id="comp"><img src="/sim_assets/sim_icons/earth.svg" loading="eager" alt="earth-icon"></div>
                 </div>
             </footer>
             <!--App-Wrapper-(Mails, etc.)-->

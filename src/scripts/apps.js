@@ -24,15 +24,15 @@ export const createAppView = (app) => {
             asideCtn.innerHTML = `
                 <header class="aside-header-elm">
                     <div class="app-logo-ctn">
-                        <img src="/src/assets/images/mail_logo.svg" loading="lazy" alt="app-logo">
+                        <img src="/sim_assets/images/mail_logo.svg" loading="lazy" alt="app-logo">
                     </div>
                 </header>
                 <main class="aside-main-elm">
                     <section class="aside-options-ctn">
-                        <img src="/src/assets/sim_icons/inbox.svg" loading="eager" alt="inbox-icon">
-                        <img src="/src/assets/sim_icons/send.svg" loading="eager" alt="send-icon">
-                        <img src="/src/assets/sim_icons/circle-alert.svg" loading="eager" alt="alert-icon">
-                        <img src="/src/assets/sim_icons/trash.svg" loading="eager" alt="trash-icon">
+                        <img src="/sim_assets/sim_icons/inbox.svg" loading="eager" alt="inbox-icon">
+                        <img src="/sim_assets/sim_icons/send.svg" loading="eager" alt="send-icon">
+                        <img src="/sim_assets/sim_icons/circle-alert.svg" loading="eager" alt="alert-icon">
+                        <img src="/sim_assets/sim_icons/trash.svg" loading="eager" alt="trash-icon">
                     </section>
                 </main>
             `;
@@ -40,12 +40,12 @@ export const createAppView = (app) => {
             headerCtn.innerHTML = `
                 <div class="app-search-ctn">
                     <i class="app-search-icon">
-                        <img src="/src/assets/sim_icons/search.svg" alt="search-icon">
+                        <img src="/sim_assets/sim_icons/search.svg" alt="search-icon">
                     </i>
                     <input type="text" id="app-search-ctn" placeholder="Suche...">
                 </div>
                 <div class="app-return-ctn" id="app-return-ctn">
-                    <img src="/src/assets/sim_icons/close.svg" loading="eager" alt="close-icon">
+                    <img src="/sim_assets/sim_icons/close.svg" loading="eager" alt="close-icon">
                 </div>
             `;
 

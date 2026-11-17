@@ -37,7 +37,7 @@ export const renderMails = () => {
             mailDate.innerText = '24.06';
 
             const mailMarker = document.createElement('img');
-            mailMarker.src = '/src/assets/sim_icons/star.svg';
+            mailMarker.src = '/sim_assets/sim_icons/star.svg';
             mailMarker.alt = 'star-icon';
             mailMarker.loading = 'eager';
 
@@ -72,12 +72,12 @@ export const readMails = (mail) => {
         mailViewCtn.innerHTML = `
             <header class="mail-view-header">
                 <div class="mail-utility-wrapper">
-                    <img src="/src/assets/sim_icons/arrow-left.svg" loading="eager" alt="arrow-left-icon">
-                    <img src="/src/assets/sim_icons/archive.svg" loading="eager" alt="archive-icon">
-                    <img src="/src/assets/sim_icons/circle-alert.svg" loading="eager" alt="circle-alert-icon">
-                    <img src="/src/assets/sim_icons/trash.svg" loading="eager" alt="trash-icon">
+                    <img src="/sim_assets/sim_icons/arrow-left.svg" loading="eager" alt="arrow-left-icon">
+                    <img src="/sim_assets/sim_icons/archive.svg" loading="eager" alt="archive-icon">
+                    <img src="/sim_assets/sim_icons/circle-alert.svg" loading="eager" alt="circle-alert-icon">
+                    <img src="/sim_assets/sim_icons/trash.svg" loading="eager" alt="trash-icon">
                     <div class="line-elm"></div>
-                    <img src="/src/assets/sim_icons/ellipsis-vertical.svg" loading="eager" alt="ellipsis-vertical-icon">
+                    <img src="/sim_assets/sim_icons/ellipsis-vertical.svg" loading="eager" alt="ellipsis-vertical-icon">
                 </div>
             </header>
             <main>
@@ -92,7 +92,7 @@ export const readMails = (mail) => {
                         </div>
                     </header>
                     <main class="mail-content-main">
-                        (/\/\/\)
+                        test
                     </main>
                 </section>
             </main>
