@@ -38,7 +38,7 @@
       "sender": {
         "username": "Innenminister",
         "avatar": {
-          "src": "/src/assets/images/minister_avatar.avif",
+          "src": "/sim_assets/images/minister_avatar.avif",
           "alt": "Avatar"
         }
       }
@@ -50,7 +50,7 @@
       "sender": {
         "username": "Innenminister",
         "avatar": {
-          "src": "/src/assets/images/minister_avatar.avif",
+          "src": "/sim_assets/images/minister_avatar.avif",
           "alt": "Avatar"
         }
       }
